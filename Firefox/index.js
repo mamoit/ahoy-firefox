@@ -102,6 +102,7 @@ function getBlockedSitesList()
     }).get();
 }
 
+/*
 function logURL(tab)
 {
     //check if the website we're trying to visit already exists on the blocked website list
@@ -114,6 +115,7 @@ function logURL(tab)
         }).get();
     }
 }
+*/
 
 function setAhoyFilter()
 {
@@ -167,7 +169,7 @@ getBlockedSitesList();
 
 getProxy();
 
-tabs.on("ready", logURL);
+//tabs.on("ready", logURL);
 tabs.on("read", setIcon);
 
 panel.postMessage(auxJSON);
